@@ -1,0 +1,16 @@
+.default{
+    text-align: center;
+}
+
+.best{
+    background-color: rgba(245, 245, 220, 0.318);
+    border-radius: 2vh;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 2vh;
+    padding-bottom:1vh;
+}
+
+.best li{
+    list-style-type: decimal;
+}

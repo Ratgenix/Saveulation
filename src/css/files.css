@@ -1,0 +1,63 @@
+.upload{
+    text-align: center;
+}
+.input Button{
+    text-align: center;
+    display: none;
+    color:red
+}
+Button{
+    border-color: transparent;
+    border-radius: 0vw;
+    background-color: aqua;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .4s all ease-in-out;
+}
+Button:hover{
+    border-bottom-color: white !important;
+    transition: .4s all ease-in-out;
+    transform: scale(1.2);
+}
+li{
+    list-style: none;
+}
+li a{
+    transition: all .3s;
+    text-decoration: none;
+}
+li a:hover{
+    color:rgb(173, 173, 173);
+    transition: all .3s;
+}
+.upload hr{
+    margin-bottom: 3vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    color:white;
+    border-color: white;
+    background-color: white;
+}
+
+.imgs-div{
+ 
+        background-color: rgba(245, 245, 220, 0.318);
+        border-radius: 2vh;
+        margin-left: 30vh;
+        margin-right: 30vh;
+        padding-top: 3vh;
+
+}
+.files .del{
+    cursor: pointer;
+    color:red;
+    display: inline-block;
+    /* float: right; */
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left:5%;
+}
+
+.files a{
+    display: inline-block !important;
+}

@@ -1,0 +1,35 @@
+.sign{
+    text-align: center;
+    display: block;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-control{
+    text-align: center !important;
+    vertical-align: top;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+}
+
+a {
+    color:aliceblue;
+}
+
+a:hover{
+    color:bisque;
+}
+
+.sign Button {
+    margin-top:2vw;
+    transform: scale(1.1);
+}
+
+#line{
+    margin-top: 1vw;
+}
+

@@ -1,25 +1,55 @@
-import logo from './logo.svg';
+//imports
+import React, {useState} from 'react'
 import './App.css';
+import { Route, Routes} from 'react-router-dom'
+
+
+//pages
+import Home from './pages/Index.js'
+import Oops from './pages/Oops.js'
+import Login from './pages/Login.js'
+import Signup from './pages/Signup.js'
+import Upload from './pages/Upload.js'
+
+//components
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+/*
+import Sidebar from './components/Sidebar'
+*/
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+  const[isOpen, setIsOpen] = useState(false)
+
+  const toggle=()=>{
+      setIsOpen(!isOpen)
+  }
+
+  return (
+    
+    <div className="site-wrapper" >
+    <div className="head-comp">
+    <Navbar toggle={toggle}/>
+    </div>
+      <div className="page-container">
+
+    
+     <Routes>
+
+     <Route path="/" element={<Home />} />
+     <Route path="/*" element={<Oops />} />
+     <Route path="/login" element={<Login />} />
+     <Route path="/signup" element={<Signup />} />
+     <Route path="/upload" element={<Upload />} />
+
+    </Routes>
+ 
+      </div>
+      <Footer/>
+    </div>
+
+    
+);
+}
 export default App;

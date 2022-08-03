@@ -1,0 +1,61 @@
+.footer{
+    align-items: center;
+    align-self: center;
+    flex:auto;
+    left:0;
+    right:0;
+    bottom:0;
+    margin-top:2vw;
+
+    padding-top: .1vw;
+    padding-bottom: .1vh;
+    color:white;
+    background-color: black;
+    text-align: center;
+    z-index: 99;
+    background-color: black !important;
+    vertical-align: top;
+}
+
+.copyright-info{
+    flex:auto;
+    color: white;
+    /*padding-top:1vw; */
+    vertical-align: top;
+    margin-top: 1vh;
+
+
+}
+p{
+    margin-top: -10px;
+}
+.copyright-info a{
+    color:royalblue !important;
+}
+.copyright-info a:hover{
+
+        transition: all .2s ease-in-out;
+        color:crimson !important;
+    
+}
+
+#kofi{
+    font-size: x-large;
+    background-color: gray;
+    border-radius: 5vh;
+    padding-left: .3vw;
+    padding-right: .3vw;
+    padding-top: auto;
+    /* padding: auto; */
+    margin-right:auto;
+    margin-left: auto;
+    transition: all .3s;
+}
+#kofi:hover{
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+.col-sm{
+    margin-top: auto;
+}

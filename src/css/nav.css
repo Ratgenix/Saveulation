@@ -1,0 +1,44 @@
+.navbar{
+    background-color: green;
+    top:0;
+    width: auto;
+    left: 0;
+    right:0;
+    position: sticky;
+    margin-top: 0px;
+    display: flex;
+}
+
+.navbar p{
+    margin-top: auto;
+}
+
+.search{
+    /* float:left; */
+    position: absolute;
+    /* display: inline-block; */
+    left:46%;
+    /* right:50%; */
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.home{
+    float:left;
+    margin-left: 10%;
+    /* margin-right:auto;  */
+    margin-top: auto;
+    /* display: inline-block; */
+}
+.user{
+    float:left;
+    margin-left: auto;
+    margin-right:10%;
+    margin-top: auto;
+    /* display: inline-block; */
+}
+
+a:hover{
+    color:crimson;
+}
