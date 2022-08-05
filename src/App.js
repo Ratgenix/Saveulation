@@ -10,7 +10,8 @@ import Oops from './pages/Oops.js'
 import Login from './pages/Login.js'
 import Signup from './pages/Signup.js'
 import Upload from './pages/Upload.js'
-
+import Reset from './pages/Reset.js'
+import User from './pages/User.js'
 //components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -42,6 +43,8 @@ function App() {
      <Route path="/login" element={<Login />} />
      <Route path="/signup" element={<Signup />} />
      <Route path="/upload" element={<Upload />} />
+     <Route path="/reset" element={<Reset />} />
+     <Route path="/user" element={<User />} />
 
     </Routes>
  

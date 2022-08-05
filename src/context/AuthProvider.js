@@ -31,6 +31,16 @@ export function AuthProvider({ children }) {
     findUserL(email, password);
 
 }
+  function passwordReset(email){
+    auth.sendPasswordResetEmail(email)
+    .then(()=>{
+    console.log('Password reset email sent !!')
+  })
+  .catch(error => {
+    console.error(error);
+  })
+  }
+
 //just store user in cookies or fuckin whatever idk
   function signupUser(email, password, user){
 
@@ -137,6 +147,7 @@ export function AuthProvider({ children }) {
         signin,
         logout,
         signupUser,
+        passwordReset,
         users,
         user,
         findUser,

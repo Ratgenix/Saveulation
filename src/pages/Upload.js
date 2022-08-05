@@ -271,7 +271,7 @@ function NameConversion(props){
   }
 
 return(
-<p title={testName}>{testName} - {uploader}</p>
+<p title={testName}>{testName}</p>
 )
 }
 

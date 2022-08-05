@@ -5,6 +5,7 @@ import {AuthProvider, useAuth} from '../context/AuthProvider.js'
 import {store, db} from '../components/Firebase.js'
 import { getStorage, ref, deleteObject, getMetadata } from "firebase/storage";
 // import {NameConversion, DisplayAll} from './Upload.js'
+// import Search from '../components/Search';
 
 function Index() {
   const {currentUser, testVal, users, user, findUser}=useAuth();
@@ -156,7 +157,7 @@ dbRef.on('value', (snapshot)=>{
               <a href={file.dlURLs}>
             {file.fileNames} - {file.userN}
         </a>
-      {console.log(file.fileNames, file.dlURLs, file.userN)}
+      {/* {console.log(file.fileNames, file.dlURLs, file.userN)} */}
     </li>
     );
       }
@@ -174,6 +175,7 @@ dbRef.on('value', (snapshot)=>{
         <div className='best'>
       {finalLoad && <Finish/>} 
       </div>
+      {/* <Search/> */}
         </div>
 
   )

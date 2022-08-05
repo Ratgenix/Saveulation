@@ -4,6 +4,10 @@ import '../css/nav.css';
 //import {NavDropdown} from 'react-bootstrap';
 //import {FiAlignRight,FiXCircle,FiChevronDown} from "react-icons/fi";
 import {AuthProvider, useAuth} from '../context/AuthProvider.js'
+// import {AiOutlineSearch} from 'react-icons/ai'
+//
+import Search from './Search';
+//
 
 var toggle = true;
 
@@ -29,7 +33,10 @@ const Navbar = ({toggle}) => {
         <h2><a href='/'>Saveulation</a></h2>
         </div> 
         <div className='search'>
-            <h2>Search</h2>
+        {/* <span><AiOutlineSearch id='search-ico'/><input type="text" placeholder='Search...'/></span> */}
+        <span>
+        <Search/>
+        </span>
         </div>
         <div className='user'>
            {!currentUser && <p><a href='/signup'>user placeholder</a></p> }

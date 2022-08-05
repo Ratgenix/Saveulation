@@ -17,13 +17,59 @@
     /* float:left; */
     position: absolute;
     /* display: inline-block; */
-    left:46%;
-    /* right:50%; */
+    left:43%;
+    /* text-align: center !important; */
+    /* right:auto; */
     margin-left: auto;
     margin-right:auto;
-    margin-top: auto;
+    margin-top: 1%;
     margin-bottom: auto;
+    /* background-color:transparent; */
+    background-color: rgba(64, 64, 64, 0.449);
+    border-radius: 1vh;
+    padding-right: 1vw;
+    padding-left:2vw;
+    padding-bottom: .1vw;
 }
+.search input{
+    background-color: transparent !important;
+    color:white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* display: none; */
+    margin-top: -100px;
+}
+::placeholder{
+    color:gray;
+    opacity: 1;
+}
+.search input:focus{
+    /* border-bottom: 1vw !important; */
+    /* border-color: red !important; */
+    outline: none !important;
+    
+    /* border-radius: 100000vh; */
+    /* background-color: red !important; */
+}
+#search-ico{
+    position: absolute;
+    /* float: left; */
+    /* margin-top:10px; */
+    /* margin-right:90vw;  */
+    /* margin-right:10px; */
+    top:5%;
+    left:0%;
+    font-size: x-large;
+    /* display: inline-block; */
+}
+.sb2{
+    /* display: inline-block; */
+    flex-direction: row;
+    justify-content: space-between;
+    /* float:left; */
+}
+
 .home{
     float:left;
     margin-left: 10%;
