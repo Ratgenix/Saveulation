@@ -40,7 +40,7 @@ const Navbar = ({toggle}) => {
         </span>
         </div>
         <div className='user'>
-           {!currentUser && <p><a href='/signup'>user placeholder</a></p> }
+           {!currentUser && <p><a href='/login'>user placeholder</a></p> }
             {currentUser && <h2><a href='/upload'>{testVal}</a></h2>}
         </div>
 
