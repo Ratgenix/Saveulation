@@ -251,29 +251,29 @@ function delItem(imageName){
   
   }
 
-function NameConversion(props){
-  let newName=props.name
-  // console.log(newName)
-  let uploader = newName.split('saves')[1].split('%2F')[1]
-  // console.log(uploader)
-  newName=newName.split('saves')[1].split('%2F')[2].split('.sav')[0];
-  let NameArr = newName
-  var testName = '';
-  if(newName.indexOf('%20')>-1){
-    // console.log("found")
-    NameArr = NameArr.split('%20')
-    testName = NameArr.join(' ')
-    if(testName.indexOf('%5B')){
-      NameArr=testName.split('%5B')[0]
-      // console.log(NameArr)
-      testName=NameArr
+  function NameConversion(props){
+    let newName=props.name
+    // console.log(newName)
+    let uploader = newName.split('saves')[1].split('%2F')[1]
+    // console.log(uploader)
+    newName=newName.split('saves')[1].split('%2F')[2].split('.sav')[0];
+    let NameArr = newName
+    var testName = '';
+    if(newName.indexOf('%20')>-1){
+      // console.log("found")
+      NameArr = NameArr.split('%20')
+      testName = NameArr.join(' ')
+      if(testName.indexOf('%5B')){
+        NameArr=testName.split('%5B')[0]
+        // console.log(NameArr)
+        testName=NameArr
+      }
     }
-  }
 
-return(
-<p title={testName}>{testName}</p>
-)
-}
+  return(
+  <p title={testName}>{testName}</p>
+  )
+  }
 
 
 function test1(idTag){

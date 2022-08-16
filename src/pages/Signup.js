@@ -9,7 +9,7 @@ function Signup () {
   const passwordRef=useRef()
   const passwordConfirmRef=useRef()
   const userRef=useRef()
-  const {login, currentUser, logout, signupUser, users} = useAuth()
+  const {login, currentUser, logout, signupUser, users, findUserDB, dbList} = useAuth()
   const [error,setError]=useState("")
   const [loading, setLoading]=useState(false)
   const [input, setValues] = useState(
@@ -68,9 +68,14 @@ const onChange= (event)=>{
       
   }
 
+
+//   function getDBh(){
+//     findUserDB()
+//   }
   return (
       <>
       <div className="sign">
+        {/* <Button onClick={getDBh}>DB</Button> */}
           <Card>
               <Card.Body>
               {currentUser && 

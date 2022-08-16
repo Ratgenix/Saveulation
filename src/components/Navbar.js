@@ -5,7 +5,7 @@ import '../css/nav.css';
 //import {FiAlignRight,FiXCircle,FiChevronDown} from "react-icons/fi";
 import {AuthProvider, useAuth} from '../context/AuthProvider.js'
 // import {AiOutlineSearch} from 'react-icons/ai'
-//
+import savulation from '../imgs/savulation.png'
 import Search from './Search';
 //
 
@@ -31,6 +31,7 @@ const Navbar = ({toggle}) => {
         <div className="navbar">  
         <div className='home'>            
         <h2><a href='/'>Saveulation</a></h2>
+        {/* <a href='/'><img src={savulation}></img></a> */}
         </div> 
         <div className='search'>
         {/* <span><AiOutlineSearch id='search-ico'/><input type="text" placeholder='Search...'/></span> */}

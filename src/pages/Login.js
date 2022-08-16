@@ -72,7 +72,7 @@ function Login() {
                       disabled={loading}
                       type="submit">Login!</Button>
 
-                      <p>Forgot Password? Click <a href='/reset'>here!</a></p>
+                      <p className='forP'>Forgot Password? Click <a href='/reset'>here!</a></p>
                       
                   </Form>}
                  

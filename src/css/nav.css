@@ -1,3 +1,10 @@
+
+@font-face{
+    font-family: 'Play';
+    src:url('../fonts/Play-Bold.ttf');
+    font-display:swap;
+  }
+
 .navbar{
     background-color: green;
     top:0;
@@ -71,12 +78,16 @@
 }
 
 .home{
+    font-family: 'Play';
+    font-size: large;
     float:left;
     margin-left: 10%;
     /* margin-right:auto;  */
     margin-top: auto;
     /* display: inline-block; */
+    color:aqua !important;
 }
+
 .user{
     float:left;
     margin-left: auto;
@@ -85,6 +96,11 @@
     /* display: inline-block; */
 }
 
+a{
+    transition: all .3s;
+    text-decoration: none;
+}
 a:hover{
     color:crimson;
+    transition: all .3s;
 }
